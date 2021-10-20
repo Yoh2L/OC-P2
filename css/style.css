@@ -16,6 +16,24 @@ ul, li{
 
 }
 
+h1{
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+h3{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
 
             /*header*/
 
@@ -303,6 +321,11 @@ a:active{
     
 }
 
+.card-heb p{
+    font-size: 12px;
+
+}
+
 
 
 .card-image-heb{
@@ -315,6 +338,7 @@ a:active{
 .card-text-heb{
     font-size: 10px;
     margin-left: 10px;
+    margin-top: 10px;
 
 }
 
@@ -393,14 +417,11 @@ a:active{
 
 /* Activites a Marseille */
 
-.section-activities{
-    width: 100%;
 
-}
 
 
 .title-activities{
-    margin: 0 50px;
+    margin: 20px 50px;
 
 }
 
@@ -418,7 +439,7 @@ a:active{
 
 
 .activities-column-big{
-    height: 550px;
+    height: 600px;
 
 }
 
@@ -438,8 +459,8 @@ a:active{
 }
 
 .big-picture-activities{
-    height: 500px;
-    width: 350px;
+    height: 540px;
+    width: 410px;
     object-fit: cover;
     
 }
@@ -462,7 +483,7 @@ a:active{
 
 
 .activities-column-small{
-    height: 550px;
+    height: 590px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -486,7 +507,14 @@ a:active{
 
 .small-picture-activities{
     height: 200px;
-    width: 350px;
+    width: 410px;
+    object-fit: cover;
+
+}
+
+.medium-picture-activities{
+    height: 240px;
+    width: 410px;
     object-fit: cover;
 
 }
