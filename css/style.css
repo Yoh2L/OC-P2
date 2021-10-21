@@ -1,5 +1,5 @@
 html ,body{
-    font-family: Raleway, sans-serif;  
+    font-family: Raleway, sans-serif;
     
 }
 
@@ -360,7 +360,7 @@ a:active{
 
 
 .card-image-heb{
-    width: 300px;
+    width: 325px;
     height: 200px;   
     object-fit: cover;
 
@@ -395,7 +395,7 @@ a:active{
     width: 30%;
     padding: 32px;
     border-radius: 15px;
-    row-gap: 32px;
+    row-gap: 64px;
     
 }
 
@@ -461,7 +461,7 @@ a:active{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 50px;
+    justify-content: space-between;    
     margin-left: 50px;
     margin-right: 50px;
    
@@ -497,8 +497,10 @@ a:active{
 }
 
 .height-txt-big-card{
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
-    height: 50px;
+    height: 60px;
     padding-top: 10px;
     padding-left: 20px;
     
@@ -514,11 +516,10 @@ a:active{
 
 
 .activities-column-small{
-    height: 590px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
 }
  
 .small-card-activities{
@@ -537,22 +538,24 @@ a:active{
 
 
 .small-picture-activities{
-    height: 200px;
+    height: 180px;
     width: 410px;
     object-fit: cover;
 
 }
 
 .medium-picture-activities{
-    height: 240px;
+    height: 260px;
     width: 410px;
     object-fit: cover;
 
 }
 
 .height-txt-small-card{
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
-    height: 50px;
+    height: 60px;
     padding-top: 10px;
     padding-left: 20px; 
 
