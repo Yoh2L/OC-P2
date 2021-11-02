@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
 
 <!--character encoding, toujours utf-8 par défaut-->
@@ -8,7 +8,7 @@
 <!--viewport, taille de la partie visible de la page web-->                                                                            
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
- <!--lien vers police google fonts-->
+<!--lien vers police google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">       
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">   
@@ -23,8 +23,9 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">                                         
         
         <title>Booki</title>
+        <link rel="icon" type="image" href="images/logo/favicon_32.png">
     </head>
- 
+
     <body>
         
 <!-- Logo et boutons de haut de page -->
@@ -36,10 +37,10 @@
             <nav>
                 <ul id="entete-menu">
                     <li>
-                        <a href="#hebergements">Hébergements</a>
+                        <a href="#hebergements" class="headerNavLink menu-active">Hébergements</a>
                     </li>
                     <li>
-                        <a href="#section-activities">Activités</a>
+                        <a href="#section-activities" class="headerNavLink">Activités</a>
                     </li>
                 </ul>
             </nav>          
@@ -62,15 +63,16 @@
                     <span class="bg-geo-point"><span class="fas fa-map-marker-alt geo-point"></span></span>
                 </label>
                 <input type="text" id="champ-ville" value="Marseille, France" placeholder="Où allez-vous ?"/>
-                <button class=btn-research>Rechercher</button>              
-                      
+                <button class=btn-research>
+                    <span class="search-txt">Rechercher</span>
+                    <span class="fas fa-search search-icon"></span>
+                </button>              
             </form>
-             
 
 <!-- Filtres de tri -->
 
             <div class="filtres">
-                <span>Filtres</span>
+                <span class="filter-txt">Filtres</span>
                 <button class="btn">
                     <span class="bg-filter-icon">
                         <span class="fas fa-money-bill-wave"></span>
@@ -222,7 +224,7 @@
             </section>
 
 
- <!-- Les plus populaires -->
+<!-- Les plus populaires -->
 
             <aside class="populaires">
                 <h2 class="title-pop"><span>Les plus populaires</span><span class="fas fa-chart-line chart-populaire"></span></h2>
@@ -282,9 +284,8 @@
 
     </div>
 
-  
 
-    <!-- Activites a Marseille -->
+<!-- Activites a Marseille -->
 
     <section id="section-activities">
         <div class="title-activities"><h2>Activités à Marseille</h2></div>
@@ -340,14 +341,11 @@
         </div>
 
 
-
     </section>
 
-           
-        
-
-
         </main>
+
+
         <footer>
             <div class="block-footer">
                 <div class="footer-column1">

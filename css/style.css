@@ -1,6 +1,5 @@
 html ,body{
     font-family: Raleway, sans-serif;
- 
     
 }
 
@@ -30,9 +29,9 @@ h2{
 }
 
 h3{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
-
+    
 }
 
 
@@ -68,7 +67,7 @@ h3{
 }
 
 
-#entete-menu a:hover, a:active{
+#entete-menu a:hover, #entete-menu a.menu-active{
     border-top: 2px solid #0065FC;
     color: #0065FC;
 
@@ -78,18 +77,22 @@ h3{
 
 h1{
     font-size: 25px;
-       
+
+}
+
+main{
+    width: 100%;
+
 }
 
 .main-titre{
-    margin: 20px 50px;
+    margin: 50px;
 
 }
 
 
 .main-titre p{
     font-size: 20px;
-    
 }
 
 a{
@@ -109,11 +112,13 @@ a:active{
 
 /* Formulaire de recherche*/
 
+.search-icon {display:none}
+.search-txt {display:inline-block}
+
 .form-ville{  
     display: flex;
     margin: 30px 50px 30px 50px;      
 
-         
 }   
 
 .marker{
@@ -143,7 +148,7 @@ a:active{
     border-bottom-style: solid;
     border-width: 1px;
     font-weight: bold;
-   
+
 }
 
 .btn-research{
@@ -158,7 +163,7 @@ a:active{
     border: none;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
-   
+
 }
 
 .btn-research:active{
@@ -209,7 +214,7 @@ a:active{
 
 }
 
- .fa-money-bill-wave{
+.fa-money-bill-wave{
     color: #0065FC;
     position: absolute;
     top: 50%;
@@ -256,11 +261,11 @@ a:active{
 }
 
 .bg-info-icon{
-   position: relative;
-   border: 1px solid #F2F2F2;
-   border-radius: 50%;
-   height: 25px;
-   width: 25px;
+    position: relative;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
 
 }
 
@@ -279,13 +284,13 @@ a:active{
 
 .blue-star{
     color: #0065FC ;
-    font-size: 10px;  
+    font-size: 14px;  
 
 }
 
 .grey-star{
     color: rgb(206, 203, 203);
-    font-size: 10px;  
+    font-size: 14px;  
 
 }
 
@@ -295,46 +300,44 @@ a:active{
 }
 
 .corps{
-    display: flex; 
+    display: flex;
     margin: 50px;
-    gap: 50px;
-
+    justify-content: space-between
+    ;
 }
 
 
 .title-heb{
-    display: flex;
     width: 100%;
 }
 
 
 .afficher-plus{
-   font-size: 16px;
-   font-weight: bold;
-   text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
 
 }
 
 
 #hebergements{
-
-    display: flex;
-    flex-wrap: wrap;
+    box-sizing: border-box;
     background-color: #F2F2F2;
     width: 65%;
     border-radius: 15px;
     padding: 32px;
-    row-gap: 20px;
-
 
 }
 
 .area-card-heb{
     display: flex;
     flex-wrap: wrap; 
-    justify-content: center;   
-    gap: 50px;
-     
+    justify-content: space-between;
+
+}
+
+.area-card-heb article{
+    width: 30%;
 
 }
 
@@ -348,7 +351,8 @@ a:active{
     overflow: hidden;  
     text-decoration: none;
     transition: transform .2s ease-in-out;
-    
+    width: 100%;
+    margin: 20px 0;
 }
 
 .card-heb p{
@@ -358,16 +362,25 @@ a:active{
 
 
 .card-image-heb{
-    width: 325px;
+    width: 100%;
     height: 200px;   
     object-fit: cover;
 
 }
 
 .card-text-heb{
-    font-size: 10px;
-    margin-left: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.card-text-heb p{
+    font-size: 16px;
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-text-heb span{
+    padding-bottom: 5px;
 
 }
 
@@ -381,28 +394,20 @@ a:active{
 .title-pop{
     display: flex;    
     justify-content: space-between;
-    width: 80%;
-    padding-left: 50px;
-    
     
 }
 .populaires{ 
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     background-color: #F2F2F2;
-    width: 30%;
+    width: 32%;
     padding: 32px;
     border-radius: 15px;
-    row-gap: 64px;
+    row-gap: 32px;
     
 }
 
-.populaires article{
-    display: flex;
-    justify-content: center;
-    
-   
-}
 
 
 .card-pop{
@@ -410,8 +415,7 @@ a:active{
     background-color: white;
     display: flex;
     flex-direction: row;
-    height: 160px;
-    width: 80%;
+    height: 200px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;   
     text-decoration: none;
@@ -424,18 +428,17 @@ a:active{
     height: 100%;
     width: 40%;    
     object-fit: cover;
-   
 }
 
 
 .text-card-pop{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   justify-content: space-between;
-   padding: 10px;
-   font-size: 10px; 
-    
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    width: 60%;
 }
 
 .card-pop:hover{
@@ -446,29 +449,31 @@ a:active{
 
 /* Activites a Marseille */
 
-
+#section-activities{
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
 
 .title-activities{
-    margin: 20px 50px;
+    margin-bottom: 20px;
 
 }
 
 
 .block-activities{
     display: flex;
+    box-sizing: border-box;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;    
-    margin-left: 50px;
-    margin-right: 50px;
-   
     
 }
 
 
 .activities-column-big{
     height: 600px;
+    margin: 0;
 
 }
 
@@ -482,7 +487,6 @@ a:active{
     border-radius: 20px;   
     text-decoration: none;
     overflow: hidden;
-    font-size: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: transform .2s ease-in-out;
 }
@@ -519,7 +523,7 @@ a:active{
     flex-direction: column;
     justify-content: space-between;
 }
- 
+
 .small-card-activities{
     display: flex;
     flex-direction: column;
@@ -527,7 +531,6 @@ a:active{
     border-radius: 20px;   
     text-decoration: none;
     overflow: hidden;
-    font-size: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: transform .2s ease-in-out;
 }
@@ -566,25 +569,34 @@ a:active{
 
 /* Footer */
 
+
+
+footer{     
+    background-color: #F2F2F2;
+    margin-top: 100px;
+    width: 100%;    
+}
+
+.block-footer{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding: 50px;
+    
+}
+
+.block-footer div{
+    width: calc(100%/3);
+
+
+}
+
 .ul-footer{
     list-style-type: none;
     padding-left: 0px;
     
 }
 
-footer{     
-    background-color: #F2F2F2;
-    margin-top: 100px;       
-}
-
-.block-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 50px;
-    
-}
 
 .txt-footer{
     text-decoration: none;
@@ -598,5 +610,236 @@ footer{
 .ul-footer li{
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100%;
+
+}
+
+/* Media queries */
+
+
+/* Version tablette */
+
+@media screen and (max-width:992px) {
+
+
+
+.filtres{
+    display: flex;
+    flex-wrap: wrap;    
+
+}
+
+
+
+.corps{
+    flex-direction: column-reverse;
+    gap: 20px;
+
+}
+
+#hebergements{
+    width: 100%;
+}
+
+.area-card-heb article{
+    width: 45%;
+
+}
+
+.title-pop{
+    margin-bottom: 10px;
+}
+
+.populaires{
+    width: 100%;
+    row-gap: 10px;
+    justify-content: center;
+    
+}
+
+.title-heb{
+    margin-bottom: 10px;
+    
+}
+
+.block-activities{
+    gap: 40px;
+}
+
+}
+
+/* Version mobile */
+
+@media screen and (max-width: 768px) {
+
+.search-icon {display:inline-block}
+.search-txt {display:none}
+
+
+/* Header */
+
+.logo{
+    height: 90px;
+    width: 160px;
+}
+
+
+.entete{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+}
+
+
+#entete-menu a{
+    border-top: none;
+    border-bottom: 2px solid #F2F2F2;
+    font-size: 20px;
+    width: 100%;
+}
+
+
+
+
+#entete-menu a:hover, #entete-menu a.menu-active {
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+
+
+/* Main */
+
+.main-titre{
+    margin: 20px;
+
+}
+
+.form-ville{
+    justify-content: center;
+}
+
+
+
+.filter-txt{
+    width: 100%;
+
+}
+
+.filtres{
+    margin: 20px;
+
+}
+
+.btn{
+    border: 3px solid #F2F2F2;
+
+}
+
+.info{
+    margin: 20px;
+
+}
+
+
+.corps{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.card-image-pop{
+    width: 50%;
+
+}
+
+/* Hebergements */
+
+#hebergements{
+    background-color: white;
+    width: 100%;
+    padding: 32px;
+}
+
+.area-card-heb{
+    flex-direction: column;
+}
+
+.area-card-heb article{
+    width: 100%;
+
+}
+
+.card-image-heb{
+    justify-content: center;
+
+}
+
+/* Activites */
+
+#section-activities{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 32px;
+    width: 100%;
+
+}
+
+.block-activities{
+    justify-content: flex-start;
+    gap: 0px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.activities-column-big{
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.activities-column-small{
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.big-card-activities{
+    margin: 10px 0;
+}
+
+.small-card-activities{
+    margin: 10px 0;
+}
+
+
+
+.small-picture-activities{
+    height: 160px;
+}
+
+.medium-picture-activities{
+    height: 160px;
+}
+
+.big-picture-activities{
+    height: 160px;
+}
+
+/* Footer */
+
+.block-footer{
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+}
+
+.block-footer div{
+    padding: 15px;
+
+}
 
 }
