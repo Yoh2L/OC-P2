@@ -2,7 +2,7 @@
 
 ### L’entreprise Booki souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
 
-Ce projet est développer en web statique (html / css) uniquement.
+Ce projet est développé en web statique (html / css) uniquement.
 
 Il doit respecter les points suivants :
 - la validité du code auprès du W3C ;
